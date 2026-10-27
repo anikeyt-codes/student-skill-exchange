@@ -1,0 +1,134 @@
+/* my-profile.html */
+/* 1.basic page styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+/* 2.website header styling */ *
+header{
+    height: 130px;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 8%;
+}
+header h1{
+    margin: 12px;
+    font-size: 26px;
+}
+/* 3. navigation links styling  */
+nav{
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition:  0.3s;
+}
+nav a:hover{
+    background-color: #3b5bb5;
+}
+/* 4.main content styling  */
+main{
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+/* 5.profile section styling */
+#profile-section{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+#profile-section h2{
+    color:#1e3a8a;
+    margin-bottom: 25px;
+}
+/* 6.student information styling  */
+#profile-info{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+#student-name{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+#student-email{
+    color: #666;
+}
+#student-bio{
+    margin-top: 15px;
+}
+/* 7.skills section styling */
+#teaching-skills, 
+#learning-skills{
+    margin-top: 25px;
+}
+#teaching-skills h3, 
+#learning-skills h3{
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+#skills-section ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#teaching-skills li ,
+#learning-skills li{
+    background-color: #dbeafe;
+    color: #1e408a;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+/* 8.edit profile button styling */
+#edit-profile-btn{
+    margin-top: 30px;
+    padding: 12px 22px;
+    background-color: #4b608b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:  0.3s ;
+}
+#edit-profile-btn:hover{
+    background-color: #1e40af;
+}
+/* 9.footer */
+footer{
+    text-align: center;
+    padding: 20px ;
+    color: #666;
+}
+/* 10.Mobile responsive design */
+@media (max-width: 600px) {
+    header{
+        padding: 18px 5%;
+    }
+    header h1{
+        font-size: 22px;
+    }
+    main{
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+    nav{
+        gap: 12px;
+    }
+}
